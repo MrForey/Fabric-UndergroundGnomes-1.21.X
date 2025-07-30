@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "undergroundgnomes",
+	"version": "${version}",
+	"name": "Underground Gnomes",
+	"description": "Description",
+	"authors": [
+		"MrForey_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/undergroundgnomes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mrforey.undergroundgnomes.UndergroundGnomes"
+		],
+		"fabric-datagen": [
+			"net.mrforey.undergroundgnomes.UndergroundGnomesDataGenerator"
+		],
+		"client": [
+			"net.mrforey.undergroundgnomes.UndergroundGnomesClient"
+		]
+	},
+	"mixins": [
+		"undergroundgnomes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
